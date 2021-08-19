@@ -1,0 +1,42 @@
+.contact-img{
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid goldenrod;
+    border-radius:10px;
+    
+}
+.contact-info{
+     font-family: 'Great Vibes',
+     cursive;
+}
+.contact-info>h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.contact-info>p{
+    font-weight: 300;
+    font-size: 2vw;
+}
+.contact-form{
+    background: white;
+    color: black;
+}
+.contact-label{
+   
+    font-size: 1vw;
+    font-weight: 300;
+    margin-top: 10px;
+
+}
+.contact-input{
+    width: 25vw;
+    height: 5vh;
+    
+
+}
+.btn-submit{
+    background: #000;
+    color: white;
+    padding: 7px
+}
