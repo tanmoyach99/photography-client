@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -17,23 +17,23 @@ const Navbar = () => {
             <Link className="nav-link active" aria-current="page" to="/">
               Home
             </Link>
-            <Link className="nav-link" to="/">
-              Features
-            </Link>
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/pricing">
               Pricing
             </Link>
-            <select name="Photography" id="photography" className="nav-link">
-              <option value="photography">Photography </option>
-              <option value="wedding">Wedding </option>
-              <option value="pre-wedding">Pre-Wedding </option>
-              <option value="honeymoon">Honeymoon </option>
-              <option value="pregnancy">Pregnancy </option>
-              <option value="religious">Religious </option>
-              <option value="tour">Tour</option>
-            </select>
+            <Link className="nav-link" to="/contact">
+              Contact
+            </Link>
+            <Link className="nav-link" to="/dashboard">
+              Dashboard
+            </Link>
+            <Link className="nav-link" to="/albums">
+              Albums
+            </Link>
           </div>
-          <button className="btn sign-btn">Sign up</button>
+          <Link to="signUp">
+            {" "}
+            <button className="btn sign-btn">Sign up</button>
+          </Link>
         </div>
       </nav>
     </div>
@@ -41,3 +41,31 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// <select name="Photography" id="photography" className="nav-link">
+//   <option value="photography">Photography </option>
+
+//   <option value="wedding">
+//     <Link to="/wedding"> Wedding </Link>
+//   </option>
+
+//   <option value="pre-wedding">
+//     <Link to="/pre-wedding"> Pre-Wedding </Link>
+//   </option>
+
+//   <option value="honeymoon">
+//     <Link to="/honeymoon">Honeymoon</Link>{" "}
+//   </option>
+
+//   <option value="pregnancy">
+//     <Link to="/pregnancy"> Pregnancy</Link>{" "}
+//   </option>
+
+//   <option value="baby">
+//     <Link to="/baby">Baby</Link>
+//   </option>
+
+//   <option value="tour">
+//     <Link to="/tour">Tour</Link>
+//   </option>
+// </select>;

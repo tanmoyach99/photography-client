@@ -16,7 +16,6 @@ const TopBanner = () => {
   };
   return (
     <div className="top-banner d-flex row justify-content-center align-items-center img-fluid container-fluid">
-      {/* <img src={banner} alt="" className="img-fluid banner-img" /> */}
       <div className="banner-text text-white  col-md-6 col-sm-12 col-xm-12 ">
         <div>
           <h1 className="heading-text">Your Desired photography</h1>
